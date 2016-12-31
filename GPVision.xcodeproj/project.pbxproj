@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AF436A9FB2D13C4761A07C2 /* libPods-GPVision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D05C82CCA8BC79FAC5B3FE6A /* libPods-GPVision.a */; };
 		9364268E1E176E4E002A2290 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364268D1E176E4E002A2290 /* main.m */; };
 		936426911E176E4E002A2290 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 936426901E176E4E002A2290 /* AppDelegate.m */; };
 		936426941E176E4E002A2290 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936426931E176E4E002A2290 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38B003B0A19CAEED1864A6A8 /* Pods-GPVision.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPVision.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPVision/Pods-GPVision.release.xcconfig"; sourceTree = "<group>"; };
 		936426891E176E4E002A2290 /* GPVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9364268D1E176E4E002A2290 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9364268F1E176E4E002A2290 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		936426981E176E4E002A2290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9364269B1E176E4E002A2290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9364269D1E176E4E002A2290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05C82CCA8BC79FAC5B3FE6A /* libPods-GPVision.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPVision.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35C7B056EAFBC00DD211C99 /* Pods-GPVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPVision.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPVision/Pods-GPVision.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF436A9FB2D13C4761A07C2 /* libPods-GPVision.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				9364268B1E176E4E002A2290 /* GPVision */,
 				9364268A1E176E4E002A2290 /* Products */,
+				A0FDDC9430849957A2FD1E71 /* Pods */,
+				B41998B6D582F86361C996AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A0FDDC9430849957A2FD1E71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D35C7B056EAFBC00DD211C99 /* Pods-GPVision.debug.xcconfig */,
+				38B003B0A19CAEED1864A6A8 /* Pods-GPVision.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B41998B6D582F86361C996AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D05C82CCA8BC79FAC5B3FE6A /* libPods-GPVision.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 936426A01E176E4E002A2290 /* Build configuration list for PBXNativeTarget "GPVision" */;
 			buildPhases = (
+				C76A5D361E802E543EA49F05 /* [CP] Check Pods Manifest.lock */,
 				936426851E176E4E002A2290 /* Sources */,
 				936426861E176E4E002A2290 /* Frameworks */,
 				936426871E176E4E002A2290 /* Resources */,
+				5FAED2368756AA7D98A261FD /* [CP] Embed Pods Frameworks */,
+				0BF2234F0ACCA4835CCF8017 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BF2234F0ACCA4835CCF8017 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPVision/Pods-GPVision-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FAED2368756AA7D98A261FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPVision/Pods-GPVision-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C76A5D361E802E543EA49F05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		936426851E176E4E002A2290 /* Sources */ = {
@@ -269,6 +344,7 @@
 		};
 		936426A11E176E4E002A2290 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D35C7B056EAFBC00DD211C99 /* Pods-GPVision.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 535JJCWT93;
@@ -281,6 +357,7 @@
 		};
 		936426A21E176E4E002A2290 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38B003B0A19CAEED1864A6A8 /* Pods-GPVision.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 535JJCWT93;
