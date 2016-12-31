@@ -10,10 +10,15 @@
 		1AF436A9FB2D13C4761A07C2 /* libPods-GPVision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D05C82CCA8BC79FAC5B3FE6A /* libPods-GPVision.a */; };
 		9364268E1E176E4E002A2290 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364268D1E176E4E002A2290 /* main.m */; };
 		936426911E176E4E002A2290 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 936426901E176E4E002A2290 /* AppDelegate.m */; };
-		936426941E176E4E002A2290 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936426931E176E4E002A2290 /* ViewController.m */; };
-		936426971E176E4E002A2290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936426951E176E4E002A2290 /* Main.storyboard */; };
 		936426991E176E4E002A2290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 936426981E176E4E002A2290 /* Assets.xcassets */; };
 		9364269C1E176E4E002A2290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9364269A1E176E4E002A2290 /* LaunchScreen.storyboard */; };
+		936426B31E1776B5002A2290 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 936426B21E1776B5002A2290 /* libxml2.2.tbd */; };
+		936426BA1E1789D1002A2290 /* GPRankDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 936426B91E1789D1002A2290 /* GPRankDataSource.m */; };
+		936426C01E179D38002A2290 /* GPRankTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 936426BF1E179D38002A2290 /* GPRankTableViewCell.m */; };
+		936426CD1E17A2A8002A2290 /* GPRankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936426CC1E17A2A8002A2290 /* GPRankViewController.m */; };
+		936426DF1E17A363002A2290 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 936426DA1E17A363002A2290 /* TFHpple.m */; };
+		936426E01E17A363002A2290 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 936426DC1E17A363002A2290 /* TFHppleElement.m */; };
+		936426E11E17A363002A2290 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 936426DE1E17A363002A2290 /* XPathQuery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +27,25 @@
 		9364268D1E176E4E002A2290 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9364268F1E176E4E002A2290 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		936426901E176E4E002A2290 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		936426921E176E4E002A2290 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		936426931E176E4E002A2290 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		936426961E176E4E002A2290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		936426981E176E4E002A2290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9364269B1E176E4E002A2290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9364269D1E176E4E002A2290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		936426AE1E177528002A2290 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		936426B11E177615002A2290 /* GPVision.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPVision.pch; sourceTree = "<group>"; };
+		936426B21E1776B5002A2290 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		936426B81E1789D1002A2290 /* GPRankDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPRankDataSource.h; sourceTree = "<group>"; };
+		936426B91E1789D1002A2290 /* GPRankDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPRankDataSource.m; sourceTree = "<group>"; };
+		936426BC1E178F28002A2290 /* GPDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPDefine.h; sourceTree = "<group>"; };
+		936426BE1E179D38002A2290 /* GPRankTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPRankTableViewCell.h; sourceTree = "<group>"; };
+		936426BF1E179D38002A2290 /* GPRankTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPRankTableViewCell.m; sourceTree = "<group>"; };
+		936426CB1E17A2A8002A2290 /* GPRankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPRankViewController.h; sourceTree = "<group>"; };
+		936426CC1E17A2A8002A2290 /* GPRankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPRankViewController.m; sourceTree = "<group>"; };
+		936426D91E17A363002A2290 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		936426DA1E17A363002A2290 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		936426DB1E17A363002A2290 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		936426DC1E17A363002A2290 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		936426DD1E17A363002A2290 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		936426DE1E17A363002A2290 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		D05C82CCA8BC79FAC5B3FE6A /* libPods-GPVision.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPVision.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35C7B056EAFBC00DD211C99 /* Pods-GPVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPVision.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPVision/Pods-GPVision.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936426B31E1776B5002A2290 /* libxml2.2.tbd in Frameworks */,
 				1AF436A9FB2D13C4761A07C2 /* libPods-GPVision.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,14 +84,16 @@
 		9364268B1E176E4E002A2290 /* GPVision */ = {
 			isa = PBXGroup;
 			children = (
-				9364268F1E176E4E002A2290 /* AppDelegate.h */,
-				936426901E176E4E002A2290 /* AppDelegate.m */,
-				936426921E176E4E002A2290 /* ViewController.h */,
-				936426931E176E4E002A2290 /* ViewController.m */,
-				936426951E176E4E002A2290 /* Main.storyboard */,
+				936426CE1E17A2C8002A2290 /* Manager */,
+				936426A31E17734A002A2290 /* Tools */,
+				936426BD1E179D1F002A2290 /* GPView */,
+				936426B71E1789B7002A2290 /* DataSource */,
+				936426CA1E17A2A8002A2290 /* ViewController */,
 				936426981E176E4E002A2290 /* Assets.xcassets */,
 				9364269A1E176E4E002A2290 /* LaunchScreen.storyboard */,
 				9364269D1E176E4E002A2290 /* Info.plist */,
+				9364268F1E176E4E002A2290 /* AppDelegate.h */,
+				936426901E176E4E002A2290 /* AppDelegate.m */,
 				9364268C1E176E4E002A2290 /* Supporting Files */,
 			);
 			path = GPVision;
@@ -82,8 +103,66 @@
 			isa = PBXGroup;
 			children = (
 				9364268D1E176E4E002A2290 /* main.m */,
+				936426B11E177615002A2290 /* GPVision.pch */,
+				936426BC1E178F28002A2290 /* GPDefine.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		936426A31E17734A002A2290 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				936426CF1E17A2F4002A2290 /* TFhpple */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		936426B71E1789B7002A2290 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				936426B81E1789D1002A2290 /* GPRankDataSource.h */,
+				936426B91E1789D1002A2290 /* GPRankDataSource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		936426BD1E179D1F002A2290 /* GPView */ = {
+			isa = PBXGroup;
+			children = (
+				936426BE1E179D38002A2290 /* GPRankTableViewCell.h */,
+				936426BF1E179D38002A2290 /* GPRankTableViewCell.m */,
+			);
+			path = GPView;
+			sourceTree = "<group>";
+		};
+		936426CA1E17A2A8002A2290 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				936426CB1E17A2A8002A2290 /* GPRankViewController.h */,
+				936426CC1E17A2A8002A2290 /* GPRankViewController.m */,
+			);
+			name = ViewController;
+			path = DataSource/ViewController;
+			sourceTree = "<group>";
+		};
+		936426CE1E17A2C8002A2290 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		936426CF1E17A2F4002A2290 /* TFhpple */ = {
+			isa = PBXGroup;
+			children = (
+				936426D91E17A363002A2290 /* TFHpple.h */,
+				936426DA1E17A363002A2290 /* TFHpple.m */,
+				936426DB1E17A363002A2290 /* TFHppleElement.h */,
+				936426DC1E17A363002A2290 /* TFHppleElement.m */,
+				936426DD1E17A363002A2290 /* XPathQuery.h */,
+				936426DE1E17A363002A2290 /* XPathQuery.m */,
+			);
+			path = TFhpple;
 			sourceTree = "<group>";
 		};
 		A0FDDC9430849957A2FD1E71 /* Pods */ = {
@@ -98,6 +177,8 @@
 		B41998B6D582F86361C996AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				936426B21E1776B5002A2290 /* libxml2.2.tbd */,
+				936426AE1E177528002A2290 /* libxml2.tbd */,
 				D05C82CCA8BC79FAC5B3FE6A /* libPods-GPVision.a */,
 			);
 			name = Frameworks;
@@ -167,7 +248,6 @@
 			files = (
 				9364269C1E176E4E002A2290 /* LaunchScreen.storyboard in Resources */,
 				936426991E176E4E002A2290 /* Assets.xcassets in Resources */,
-				936426971E176E4E002A2290 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,23 +306,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				936426941E176E4E002A2290 /* ViewController.m in Sources */,
 				936426911E176E4E002A2290 /* AppDelegate.m in Sources */,
+				936426E01E17A363002A2290 /* TFHppleElement.m in Sources */,
+				936426E11E17A363002A2290 /* XPathQuery.m in Sources */,
+				936426DF1E17A363002A2290 /* TFHpple.m in Sources */,
+				936426BA1E1789D1002A2290 /* GPRankDataSource.m in Sources */,
 				9364268E1E176E4E002A2290 /* main.m in Sources */,
+				936426CD1E17A2A8002A2290 /* GPRankViewController.m in Sources */,
+				936426C01E179D38002A2290 /* GPRankTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		936426951E176E4E002A2290 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				936426961E176E4E002A2290 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9364269A1E176E4E002A2290 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -348,6 +425,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 535JJCWT93;
+				GCC_PREFIX_HEADER = GPVision/GPVision.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/EGOCache\"",
+					"\"${PODS_ROOT}/Headers/Public/FSImageViewer\"",
+					"\"${PODS_ROOT}/Headers/Public/UAProgressView\"",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = GPVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.picture.GPVision;
@@ -361,6 +448,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 535JJCWT93;
+				GCC_PREFIX_HEADER = GPVision/GPVision.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/EGOCache\"",
+					"\"${PODS_ROOT}/Headers/Public/FSImageViewer\"",
+					"\"${PODS_ROOT}/Headers/Public/UAProgressView\"",
+					"${SDKROOT}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = GPVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.picture.GPVision;
@@ -387,6 +484,7 @@
 				936426A21E176E4E002A2290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

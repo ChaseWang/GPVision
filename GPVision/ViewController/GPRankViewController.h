@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  GPRankViewController.h
 //  GPVision
 //
 //  Created by wangtao on 2016/12/31.
 //  Copyright © 2016年 wangtao. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface GPRankViewController : ViewController
 
 @end
-
