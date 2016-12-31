@@ -6,8 +6,8 @@
 //  Copyright © 2016年 wangtao. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface GPRankViewController : ViewController
+@interface GPRankViewController : UIViewController
 
 @end
