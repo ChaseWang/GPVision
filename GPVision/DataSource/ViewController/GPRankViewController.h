@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GPCollectionViewController.h"
 
-@interface GPRankViewController : UIViewController
-
+@interface GPRankViewController : GPCollectionViewController
 @end

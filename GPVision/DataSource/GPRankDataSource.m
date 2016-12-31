@@ -31,9 +31,8 @@
 
 @implementation GPRankDataSource
 - (id)initWithPath:(NSString *)path {
-    self = [super init];
+    self = [super initWithPath:path];
     if (self) {
-        _path = path;
     }
     return self;
 }

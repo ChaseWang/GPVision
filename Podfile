@@ -8,4 +8,5 @@ target 'GPVision' do
   # Pods for GPVision
 
     pod 'FSImageViewer', '~> 3.4'
+    pod 'SVPullToRefresh'
 end

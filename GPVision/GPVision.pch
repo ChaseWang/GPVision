@@ -19,6 +19,10 @@
 #import "TFHpple.h"
 #import "GPDefine.h"
 #import <UIImageView+AFNetworking.h>
+#import <SVPullToRefresh.h>
+#import "Addtional.h"
+#import <FSImageViewerViewController.h>
+
 #else
 #ifndef FOUNDATION_EXPORT
 #if defined(__cplusplus)

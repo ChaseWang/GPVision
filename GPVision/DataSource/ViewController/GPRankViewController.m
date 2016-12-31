@@ -9,15 +9,13 @@
 #import "GPRankViewController.h"
 #import "GPRankDataSource.h"
 #import "GPRankTableViewCell.h"
+#import "GPAlbumViewController.h"
 
-@interface GPRankViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
-@property (nonatomic, strong)GPRankDataSource *dataSource;
-@property (nonatomic, strong)NSMutableArray *source;
-@property (nonatomic, assign)int page;
-@property (nonatomic, strong)UICollectionView *collectionView;
+@interface GPRankViewController ()
 @end
 
 @implementation GPRankViewController
+@synthesize dataSource = _dataSource;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,29 +23,62 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"排行榜";
 
-    UICollectionViewFlowLayout *fl = [[UICollectionViewFlowLayout alloc]init];
-    fl.scrollDirection = UICollectionViewScrollDirectionVertical;
-    self.collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:fl];
-    self.collectionView.dataSource = self;
-    self.collectionView.delegate = self;
-    self.collectionView.backgroundColor = [UIColor clearColor];
     [self.collectionView registerClass:[GPRankTableViewCell class] forCellWithReuseIdentifier:@"GPRankTableViewCell"];
-    [self.view addSubview:self.collectionView];
+}
 
-    self.source = [NSMutableArray array];
-    self.dataSource = [[GPRankDataSource alloc]initWithPath:@"rank"];
+- (GPBaseDataSource *)dataSource {
+    if (!_dataSource) {
+        _dataSource = [[GPRankDataSource alloc]initWithPath:@"rank"];
+    }
+    return _dataSource;
+}
+
+- (void)loadNewData{
+    __weak GPCollectionViewController *wself = self;
     [self.dataSource loadData:[NSString stringWithFormat:@"%d",self.page] success:^(NSString *index, NSArray *info) {
-        [self.source addObjectsFromArray:info];
-        self.page++;
-        [self.collectionView reloadData];
+        [self.collectionView.pullToRefreshView stopAnimating];
+        self.collectionView.showsInfiniteScrolling = YES;
+
+        if (info.count == 0) {
+            self.collectionView.showsInfiniteScrolling = NO;
+            return;
+        }
+
+        [wself.source removeAllObjects];
+        [wself.source addObjectsFromArray:info];
+        wself.page++;
+        [wself.collectionView reloadData];
     } failure:^(NSError *error) {
 
     }];
 }
 
+
+- (void)loadMoreData{
+    __weak GPCollectionViewController *wself = self;
+    [self.dataSource loadData:[NSString stringWithFormat:@"%d",self.page] success:^(NSString *index, NSArray *info) {
+        [self.collectionView.infiniteScrollingView stopAnimating];
+
+        if (info.count == 0) {
+            self.collectionView.showsInfiniteScrolling = NO;
+            return;
+        }
+
+        [wself.source addObjectsFromArray:info];
+        wself.page++;
+        [wself.collectionView reloadData];
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
+
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     GPRankItem* item = [self.source objectAtIndex:indexPath.row];
+    GPAlbumViewController *alubmVC = [[GPAlbumViewController alloc]init];
+    alubmVC.path = item.path;
+    [self.navigationController pushViewController:alubmVC animated:YES];
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -55,21 +86,15 @@
 }
 
 #pragma mark - UICollectionViewDatasourceDelegate
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.source.count;
-}
-
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.source.count == 0) {
+
+    }
     GPRankTableViewCell *applicantCell = (GPRankTableViewCell *)
     [collectionView dequeueReusableCellWithReuseIdentifier:@"GPRankTableViewCell" forIndexPath:indexPath];
     GPRankItem *item = [self.source objectAtIndex:indexPath.row];
 
     [applicantCell setObject:item];
     return applicantCell;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 @end

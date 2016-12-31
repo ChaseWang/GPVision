@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GPBaseDataSource.h"
+
 @interface GPRankItem : NSObject
 @property (nonatomic, strong) NSString *headUrl;
 @property (nonatomic, strong) NSString *gname;
@@ -16,10 +18,5 @@
 - (id)initWithTFHppleElement:(TFHppleElement *)element;
 @end
 
-@interface GPRankDataSource : NSObject
-- (id)initWithPath:(NSString *)path;
-@property (nonatomic, readonly) NSString *path;
-- (void)loadData:(NSString *)index
-         success:(void (^)(NSString *index, NSArray *info))success
-         failure:(void (^)( NSError *error))failure;
+@interface GPRankDataSource : GPBaseDataSource
 @end
