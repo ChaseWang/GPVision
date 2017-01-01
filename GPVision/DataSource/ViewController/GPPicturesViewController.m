@@ -50,6 +50,7 @@
         [wself.source addObjectsFromArray:info];
         wself.page++;
         [wself.collectionView reloadData];
+        [wself loadMoreData];
     } failure:^(NSError *error) {
 
     }];
@@ -68,6 +69,7 @@
         [wself.source addObjectsFromArray:info];
         wself.page++;
         [wself.collectionView reloadData];
+        [wself loadMoreData];
     } failure:^(NSError *error) {
 
     }];
