@@ -42,6 +42,10 @@
         [self.collectionView.pullToRefreshView stopAnimating];
         self.collectionView.showsPullToRefresh = YES;
         if (info.count == 0) {
+
+            if (self.source.count == 0) {
+                [[HudHelper getInstance] showAutoTimeHudOnWindow:@"相册没有照片"];
+            }
             self.collectionView.showsInfiniteScrolling = NO;
             return;
         }

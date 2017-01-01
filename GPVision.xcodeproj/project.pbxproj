@@ -39,6 +39,7 @@
 		936EB69C1E18121E00BC36DD /* GPPicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EB69B1E18121E00BC36DD /* GPPicturesViewController.m */; };
 		936EB69F1E18123D00BC36DD /* GPPicturesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EB69E1E18123D00BC36DD /* GPPicturesDataSource.m */; };
 		936EB6A21E18125700BC36DD /* GPPictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EB6A11E18125700BC36DD /* GPPictureCollectionViewCell.m */; };
+		93736F561E18C7CC00FF4486 /* HudHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 93736F551E18C7CC00FF4486 /* HudHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,8 @@
 		936EB69E1E18123D00BC36DD /* GPPicturesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPicturesDataSource.m; sourceTree = "<group>"; };
 		936EB6A01E18125700BC36DD /* GPPictureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPPictureCollectionViewCell.h; sourceTree = "<group>"; };
 		936EB6A11E18125700BC36DD /* GPPictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPictureCollectionViewCell.m; sourceTree = "<group>"; };
+		93736F541E18C7CC00FF4486 /* HudHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudHelper.h; sourceTree = "<group>"; };
+		93736F551E18C7CC00FF4486 /* HudHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudHelper.m; sourceTree = "<group>"; };
 		D05C82CCA8BC79FAC5B3FE6A /* libPods-GPVision.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPVision.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35C7B056EAFBC00DD211C99 /* Pods-GPVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPVision.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPVision/Pods-GPVision.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +177,7 @@
 		936426A31E17734A002A2290 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				93736F531E18C7CC00FF4486 /* HudHelper */,
 				936426CF1E17A2F4002A2290 /* TFhpple */,
 			);
 			path = Tools;
@@ -273,6 +277,15 @@
 				936EB67D1E18007000BC36DD /* UIWindow+RscExt.m */,
 			);
 			path = Addtional;
+			sourceTree = "<group>";
+		};
+		93736F531E18C7CC00FF4486 /* HudHelper */ = {
+			isa = PBXGroup;
+			children = (
+				93736F541E18C7CC00FF4486 /* HudHelper.h */,
+				93736F551E18C7CC00FF4486 /* HudHelper.m */,
+			);
+			path = HudHelper;
 			sourceTree = "<group>";
 		};
 		A0FDDC9430849957A2FD1E71 /* Pods */ = {
@@ -426,6 +439,7 @@
 				936EB68E1E18007000BC36DD /* UIWindow+RscExt.m in Sources */,
 				936EB6821E18007000BC36DD /* NSKeyedUnarchiver+ExceptionCatch.m in Sources */,
 				936EB6891E18007000BC36DD /* UIDevice+UIDeviceExt.m in Sources */,
+				93736F561E18C7CC00FF4486 /* HudHelper.m in Sources */,
 				936EB6851E18007000BC36DD /* UIBarButtonItem+Image.m in Sources */,
 				936426E71E17A849002A2290 /* GPBaseDataSource.m in Sources */,
 				936EB6991E18079900BC36DD /* GPAlbumCollectionViewCell.m in Sources */,

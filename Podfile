@@ -7,6 +7,7 @@ target 'GPVision' do
 
   # Pods for GPVision
 
+    pod 'MBProgressHUD'
     pod 'FSImageViewer', '~> 3.4'
     pod 'SVPullToRefresh'
 end
