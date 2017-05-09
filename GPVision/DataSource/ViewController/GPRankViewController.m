@@ -77,7 +77,9 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     GPRankItem* item = [self.source objectAtIndex:indexPath.row];
     GPAlbumViewController *alubmVC = [[GPAlbumViewController alloc]init];
-    alubmVC.path = item.path;
+    alubmVC.name = item.gname;
+    NSArray *copm = [item.path componentsSeparatedByString:@"/"];
+    alubmVC.path = [NSString stringWithFormat:@"/girl/%@/album/",copm[2]];
     [self.navigationController pushViewController:alubmVC animated:YES];
 }
 

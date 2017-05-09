@@ -24,6 +24,7 @@
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
     self.collectionView.backgroundColor = [UIColor clearColor];
+    self.collectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:self.collectionView];
 
     __weak GPCollectionViewController *wself = self;

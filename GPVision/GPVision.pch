@@ -23,6 +23,7 @@
 #import "Addtional.h"
 #import <FSImageViewerViewController.h>
 #import "HudHelper.h"
+#import "AppContext.h"
 #else
 #ifndef FOUNDATION_EXPORT
 #if defined(__cplusplus)

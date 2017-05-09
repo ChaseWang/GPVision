@@ -35,14 +35,14 @@
 
 - (GPBaseDataSource *)dataSource {
     if (!_dataSource) {
-        _dataSource = [[GPAlbumDataSource  alloc]initWithPath:@"album"];
+        _dataSource = [[GPAlbumDataSource  alloc]initWithPath:self.path];
     }
     return _dataSource;
 }
 
 - (void)loadNewData{
     __weak GPCollectionViewController *wself = self;
-    [self.dataSource loadData:self.path success:^(NSString *index, NSArray *info) {
+    [self.dataSource loadData:nil success:^(NSString *index, NSArray *info) {
         [self.collectionView.pullToRefreshView stopAnimating];
         if (info.count == 0) {
             self.collectionView.showsInfiniteScrolling = NO;

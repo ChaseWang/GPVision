@@ -42,4 +42,13 @@ alpha:alphaValue]
 
 #define PATH @"http://m.zngirls.com"
 
+#define kAppCommonColor RGBCOLOR(0x60,0xbf,0x9f)
+#define kAppCommonHightlightColor RGBCOLOR(0x43,0x85,0x6f)
+#define kAppBgCommonColor RGBCOLOR(0x40,0x3b,0x3b)
+#define kAppCommonTextColor RGBCOLOR(0xe9,0xe9,0xe9)
+
+#define kGPRANK @"kGPRANK"
+#define kGPGELLARY @"kGPGALLARY"
+#define kGPWEBVIEW @"kGPWEBVIEW"
+
 #endif /* GPDefine_h */

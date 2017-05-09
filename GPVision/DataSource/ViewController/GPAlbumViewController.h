@@ -9,5 +9,4 @@
 #import "GPCollectionViewController.h"
 
 @interface GPAlbumViewController : GPCollectionViewController
-@property (nonatomic, strong)NSString *path;
 @end

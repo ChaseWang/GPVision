@@ -31,7 +31,11 @@
          success:(void (^)(NSString *index, NSArray *info))success
          failure:(void (^)( NSError *error))failure {
 
-    NSString *URLString = [NSString stringWithFormat:@"%@%@%@/",PATH,index,self.path];
+    NSString *URLString = [NSString stringWithFormat:@"%@%@%@.html",PATH,self.path,index];
+    if (index == nil || index.integerValue == 0 || index.integerValue == 1) {
+        URLString = [NSString stringWithFormat:@"%@%@",PATH,self.path];
+    }
+
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     [manager GET:URLString parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {

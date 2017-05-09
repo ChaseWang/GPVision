@@ -9,6 +9,4 @@
 #import "GPCollectionViewController.h"
 
 @interface GPPicturesViewController : GPCollectionViewController
-@property (nonatomic, strong)NSString *path;
-@property (nonatomic, strong)NSString *name;
 @end

@@ -14,7 +14,8 @@
 @property (nonatomic, assign)int page;
 @property (nonatomic, strong)UICollectionView *collectionView;
 @property (nonatomic, strong)GPBaseDataSource *dataSource;
-
+@property (nonatomic, strong)NSString *path;
+@property (nonatomic, strong)NSString *name;
 - (void)loadNewData;
 - (void)loadMoreData;
 @end

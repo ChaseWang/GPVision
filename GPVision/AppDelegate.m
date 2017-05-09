@@ -19,9 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    GPRankViewController *rankVC = [[GPRankViewController alloc]init];
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:rankVC];
+    [AppNavigator openMainViewController];
     [self.window makeKeyAndVisible];
+
     return YES;
 }
 

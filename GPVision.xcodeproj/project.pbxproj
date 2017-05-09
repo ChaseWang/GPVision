@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1AF436A9FB2D13C4761A07C2 /* libPods-GPVision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D05C82CCA8BC79FAC5B3FE6A /* libPods-GPVision.a */; };
+		93404BCB1E1974CD00D51E1F /* GPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93404BCA1E1974CD00D51E1F /* GPTabBarController.m */; };
+		93404BDB1E19752D00D51E1F /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 93404BCE1E19752D00D51E1F /* AppConfig.m */; };
+		93404BDC1E19752D00D51E1F /* AppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 93404BD01E19752D00D51E1F /* AppContext.m */; };
+		93404BDD1E19752D00D51E1F /* AppKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 93404BD21E19752D00D51E1F /* AppKeyChain.m */; };
+		93404BDE1E19752D00D51E1F /* AppNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93404BD41E19752D00D51E1F /* AppNavigationController.m */; };
+		93404BDF1E19752D00D51E1F /* AppNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 93404BD61E19752D00D51E1F /* AppNavigator.m */; };
+		93404BE01E19752D00D51E1F /* AppStartup.m in Sources */ = {isa = PBXBuildFile; fileRef = 93404BD81E19752D00D51E1F /* AppStartup.m */; };
+		93404BE11E19752D00D51E1F /* AppUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 93404BDA1E19752D00D51E1F /* AppUser.m */; };
+		93404BE41E19773700D51E1F /* GPGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93404BE31E19773700D51E1F /* GPGalleryViewController.m */; };
 		9364268E1E176E4E002A2290 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364268D1E176E4E002A2290 /* main.m */; };
 		936426911E176E4E002A2290 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 936426901E176E4E002A2290 /* AppDelegate.m */; };
 		936426991E176E4E002A2290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 936426981E176E4E002A2290 /* Assets.xcassets */; };
@@ -40,14 +49,39 @@
 		936EB69F1E18123D00BC36DD /* GPPicturesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EB69E1E18123D00BC36DD /* GPPicturesDataSource.m */; };
 		936EB6A21E18125700BC36DD /* GPPictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 936EB6A11E18125700BC36DD /* GPPictureCollectionViewCell.m */; };
 		93736F561E18C7CC00FF4486 /* HudHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 93736F551E18C7CC00FF4486 /* HudHelper.m */; };
+		937758171E1FF14100D268E8 /* GPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937758161E1FF14100D268E8 /* GPWebViewController.m */; };
+		93D09F441E19814F00C041DD /* INSlideViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D09F431E19814F00C041DD /* INSlideViewManager.m */; };
+		93D09F4C1E19817900C041DD /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D09F471E19817900C041DD /* RECommonFunctions.m */; };
+		93D09F4D1E19817900C041DD /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D09F491E19817900C041DD /* RESideMenu.m */; };
+		93D09F4E1E19817900C041DD /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D09F4B1E19817900C041DD /* UIViewController+RESideMenu.m */; };
+		93D09F5E1E19838600C041DD /* INMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D09F5B1E19838600C041DD /* INMenuCell.m */; };
+		93D09F5F1E19838600C041DD /* INMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D09F5D1E19838600C041DD /* INMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		38B003B0A19CAEED1864A6A8 /* Pods-GPVision.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPVision.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPVision/Pods-GPVision.release.xcconfig"; sourceTree = "<group>"; };
+		93404BC91E1974CD00D51E1F /* GPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPTabBarController.h; sourceTree = "<group>"; };
+		93404BCA1E1974CD00D51E1F /* GPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPTabBarController.m; sourceTree = "<group>"; };
+		93404BCD1E19752D00D51E1F /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		93404BCE1E19752D00D51E1F /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
+		93404BCF1E19752D00D51E1F /* AppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppContext.h; sourceTree = "<group>"; };
+		93404BD01E19752D00D51E1F /* AppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppContext.m; sourceTree = "<group>"; };
+		93404BD11E19752D00D51E1F /* AppKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppKeyChain.h; sourceTree = "<group>"; };
+		93404BD21E19752D00D51E1F /* AppKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppKeyChain.m; sourceTree = "<group>"; };
+		93404BD31E19752D00D51E1F /* AppNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNavigationController.h; sourceTree = "<group>"; };
+		93404BD41E19752D00D51E1F /* AppNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNavigationController.m; sourceTree = "<group>"; };
+		93404BD51E19752D00D51E1F /* AppNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNavigator.h; sourceTree = "<group>"; };
+		93404BD61E19752D00D51E1F /* AppNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNavigator.m; sourceTree = "<group>"; };
+		93404BD71E19752D00D51E1F /* AppStartup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStartup.h; sourceTree = "<group>"; };
+		93404BD81E19752D00D51E1F /* AppStartup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStartup.m; sourceTree = "<group>"; };
+		93404BD91E19752D00D51E1F /* AppUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUser.h; sourceTree = "<group>"; };
+		93404BDA1E19752D00D51E1F /* AppUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUser.m; sourceTree = "<group>"; };
+		93404BE21E19773700D51E1F /* GPGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPGalleryViewController.h; sourceTree = "<group>"; };
+		93404BE31E19773700D51E1F /* GPGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPGalleryViewController.m; sourceTree = "<group>"; };
 		936426891E176E4E002A2290 /* GPVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9364268D1E176E4E002A2290 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9364268F1E176E4E002A2290 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		936426901E176E4E002A2290 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9364268F1E176E4E002A2290 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GPVision/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		936426901E176E4E002A2290 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = GPVision/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		936426981E176E4E002A2290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9364269B1E176E4E002A2290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9364269D1E176E4E002A2290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,6 +144,20 @@
 		936EB6A11E18125700BC36DD /* GPPictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPPictureCollectionViewCell.m; sourceTree = "<group>"; };
 		93736F541E18C7CC00FF4486 /* HudHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudHelper.h; sourceTree = "<group>"; };
 		93736F551E18C7CC00FF4486 /* HudHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudHelper.m; sourceTree = "<group>"; };
+		937758151E1FF14100D268E8 /* GPWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPWebViewController.h; sourceTree = "<group>"; };
+		937758161E1FF14100D268E8 /* GPWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPWebViewController.m; sourceTree = "<group>"; };
+		93D09F421E19814F00C041DD /* INSlideViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSlideViewManager.h; sourceTree = "<group>"; };
+		93D09F431E19814F00C041DD /* INSlideViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSlideViewManager.m; sourceTree = "<group>"; };
+		93D09F461E19817900C041DD /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		93D09F471E19817900C041DD /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		93D09F481E19817900C041DD /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		93D09F491E19817900C041DD /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		93D09F4A1E19817900C041DD /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		93D09F4B1E19817900C041DD /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		93D09F5A1E19838600C041DD /* INMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INMenuCell.h; sourceTree = "<group>"; };
+		93D09F5B1E19838600C041DD /* INMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INMenuCell.m; sourceTree = "<group>"; };
+		93D09F5C1E19838600C041DD /* INMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INMenuViewController.h; sourceTree = "<group>"; };
+		93D09F5D1E19838600C041DD /* INMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INMenuViewController.m; sourceTree = "<group>"; };
 		D05C82CCA8BC79FAC5B3FE6A /* libPods-GPVision.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPVision.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35C7B056EAFBC00DD211C99 /* Pods-GPVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPVision.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPVision/Pods-GPVision.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +175,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93404BCC1E19752D00D51E1F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				93404BCD1E19752D00D51E1F /* AppConfig.h */,
+				93404BCE1E19752D00D51E1F /* AppConfig.m */,
+				93404BCF1E19752D00D51E1F /* AppContext.h */,
+				93404BD01E19752D00D51E1F /* AppContext.m */,
+				93404BD11E19752D00D51E1F /* AppKeyChain.h */,
+				93404BD21E19752D00D51E1F /* AppKeyChain.m */,
+				93404BD31E19752D00D51E1F /* AppNavigationController.h */,
+				93404BD41E19752D00D51E1F /* AppNavigationController.m */,
+				93404BD51E19752D00D51E1F /* AppNavigator.h */,
+				93404BD61E19752D00D51E1F /* AppNavigator.m */,
+				93404BD71E19752D00D51E1F /* AppStartup.h */,
+				93404BD81E19752D00D51E1F /* AppStartup.m */,
+				93404BD91E19752D00D51E1F /* AppUser.h */,
+				93404BDA1E19752D00D51E1F /* AppUser.m */,
+				9364268F1E176E4E002A2290 /* AppDelegate.h */,
+				936426901E176E4E002A2290 /* AppDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		936426801E176E4E002A2290 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +219,7 @@
 		9364268B1E176E4E002A2290 /* GPVision */ = {
 			isa = PBXGroup;
 			children = (
+				93404BCC1E19752D00D51E1F /* App */,
 				936EB65A1E18007000BC36DD /* Addtional */,
 				936426CE1E17A2C8002A2290 /* Manager */,
 				936426A31E17734A002A2290 /* Tools */,
@@ -157,8 +229,6 @@
 				936426981E176E4E002A2290 /* Assets.xcassets */,
 				9364269A1E176E4E002A2290 /* LaunchScreen.storyboard */,
 				9364269D1E176E4E002A2290 /* Info.plist */,
-				9364268F1E176E4E002A2290 /* AppDelegate.h */,
-				936426901E176E4E002A2290 /* AppDelegate.m */,
 				9364268C1E176E4E002A2290 /* Supporting Files */,
 			);
 			path = GPVision;
@@ -177,6 +247,8 @@
 		936426A31E17734A002A2290 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				93D09F591E19838600C041DD /* MenuViewController */,
+				93D09F451E19817900C041DD /* RESideMenu */,
 				93736F531E18C7CC00FF4486 /* HudHelper */,
 				936426CF1E17A2F4002A2290 /* TFhpple */,
 			);
@@ -222,6 +294,12 @@
 				936EB6921E1804A400BC36DD /* GPAlbumViewController.m */,
 				936EB69A1E18121E00BC36DD /* GPPicturesViewController.h */,
 				936EB69B1E18121E00BC36DD /* GPPicturesViewController.m */,
+				93404BE21E19773700D51E1F /* GPGalleryViewController.h */,
+				93404BE31E19773700D51E1F /* GPGalleryViewController.m */,
+				93404BC91E1974CD00D51E1F /* GPTabBarController.h */,
+				93404BCA1E1974CD00D51E1F /* GPTabBarController.m */,
+				937758151E1FF14100D268E8 /* GPWebViewController.h */,
+				937758161E1FF14100D268E8 /* GPWebViewController.m */,
 			);
 			name = ViewController;
 			path = DataSource/ViewController;
@@ -230,6 +308,7 @@
 		936426CE1E17A2C8002A2290 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				93D09F411E19814F00C041DD /* SlideViewManager */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -288,6 +367,39 @@
 			path = HudHelper;
 			sourceTree = "<group>";
 		};
+		93D09F411E19814F00C041DD /* SlideViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				93D09F421E19814F00C041DD /* INSlideViewManager.h */,
+				93D09F431E19814F00C041DD /* INSlideViewManager.m */,
+			);
+			path = SlideViewManager;
+			sourceTree = "<group>";
+		};
+		93D09F451E19817900C041DD /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				93D09F461E19817900C041DD /* RECommonFunctions.h */,
+				93D09F471E19817900C041DD /* RECommonFunctions.m */,
+				93D09F481E19817900C041DD /* RESideMenu.h */,
+				93D09F491E19817900C041DD /* RESideMenu.m */,
+				93D09F4A1E19817900C041DD /* UIViewController+RESideMenu.h */,
+				93D09F4B1E19817900C041DD /* UIViewController+RESideMenu.m */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		93D09F591E19838600C041DD /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93D09F5A1E19838600C041DD /* INMenuCell.h */,
+				93D09F5B1E19838600C041DD /* INMenuCell.m */,
+				93D09F5C1E19838600C041DD /* INMenuViewController.h */,
+				93D09F5D1E19838600C041DD /* INMenuViewController.m */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
 		A0FDDC9430849957A2FD1E71 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,7 +453,7 @@
 				TargetAttributes = {
 					936426881E176E4E002A2290 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 535JJCWT93;
+						DevelopmentTeam = UR7DYAP8G6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -430,32 +542,48 @@
 			buildActionMask = 2147483647;
 			files = (
 				936EB6931E1804A400BC36DD /* GPAlbumViewController.m in Sources */,
+				937758171E1FF14100D268E8 /* GPWebViewController.m in Sources */,
 				936EB69F1E18123D00BC36DD /* GPPicturesDataSource.m in Sources */,
 				936EB6A21E18125700BC36DD /* GPPictureCollectionViewCell.m in Sources */,
 				936EB6961E1804D200BC36DD /* GPAlbumDataSource.m in Sources */,
 				936426911E176E4E002A2290 /* AppDelegate.m in Sources */,
+				93D09F4E1E19817900C041DD /* UIViewController+RESideMenu.m in Sources */,
 				936EB6871E18007000BC36DD /* UIButton+RHCUIButtonExt.m in Sources */,
+				93404BE41E19773700D51E1F /* GPGalleryViewController.m in Sources */,
+				93D09F5F1E19838600C041DD /* INMenuViewController.m in Sources */,
 				936426E01E17A363002A2290 /* TFHppleElement.m in Sources */,
 				936EB68E1E18007000BC36DD /* UIWindow+RscExt.m in Sources */,
 				936EB6821E18007000BC36DD /* NSKeyedUnarchiver+ExceptionCatch.m in Sources */,
 				936EB6891E18007000BC36DD /* UIDevice+UIDeviceExt.m in Sources */,
+				93404BDB1E19752D00D51E1F /* AppConfig.m in Sources */,
 				93736F561E18C7CC00FF4486 /* HudHelper.m in Sources */,
+				93404BDD1E19752D00D51E1F /* AppKeyChain.m in Sources */,
 				936EB6851E18007000BC36DD /* UIBarButtonItem+Image.m in Sources */,
+				93404BDC1E19752D00D51E1F /* AppContext.m in Sources */,
+				93404BE01E19752D00D51E1F /* AppStartup.m in Sources */,
 				936426E71E17A849002A2290 /* GPBaseDataSource.m in Sources */,
 				936EB6991E18079900BC36DD /* GPAlbumCollectionViewCell.m in Sources */,
 				936426E41E17A761002A2290 /* GPCollectionViewController.m in Sources */,
 				936426E11E17A363002A2290 /* XPathQuery.m in Sources */,
 				936EB68B1E18007000BC36DD /* UINavigationBar+Image.m in Sources */,
 				936EB68D1E18007000BC36DD /* UIView+Additions.m in Sources */,
+				93404BCB1E1974CD00D51E1F /* GPTabBarController.m in Sources */,
 				936EB6881E18007000BC36DD /* UIDevice+Addtional.m in Sources */,
 				936426DF1E17A363002A2290 /* TFHpple.m in Sources */,
+				93404BDF1E19752D00D51E1F /* AppNavigator.m in Sources */,
+				93D09F5E1E19838600C041DD /* INMenuCell.m in Sources */,
 				936426BA1E1789D1002A2290 /* GPRankDataSource.m in Sources */,
 				936EB6861E18007000BC36DD /* UIButton+Addictions.m in Sources */,
 				936EB68C1E18007000BC36DD /* UITableViewAdditions.m in Sources */,
+				93D09F4D1E19817900C041DD /* RESideMenu.m in Sources */,
 				936EB6831E18007000BC36DD /* NSObject-ClassName.m in Sources */,
+				93D09F4C1E19817900C041DD /* RECommonFunctions.m in Sources */,
 				9364268E1E176E4E002A2290 /* main.m in Sources */,
+				93404BDE1E19752D00D51E1F /* AppNavigationController.m in Sources */,
+				93404BE11E19752D00D51E1F /* AppUser.m in Sources */,
 				936426CD1E17A2A8002A2290 /* GPRankViewController.m in Sources */,
 				936426C01E179D38002A2290 /* GPRankTableViewCell.m in Sources */,
+				93D09F441E19814F00C041DD /* INSlideViewManager.m in Sources */,
 				936EB69C1E18121E00BC36DD /* GPPicturesViewController.m in Sources */,
 				936EB68A1E18007000BC36DD /* UIImage+Addtional.m in Sources */,
 			);
@@ -568,7 +696,7 @@
 			baseConfigurationReference = D35C7B056EAFBC00DD211C99 /* Pods-GPVision.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 535JJCWT93;
+				DEVELOPMENT_TEAM = UR7DYAP8G6;
 				GCC_PREFIX_HEADER = GPVision/GPVision.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -580,6 +708,7 @@
 					/usr/include/libxml2,
 				);
 				INFOPLIST_FILE = GPVision/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.picture.GPVision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -591,7 +720,7 @@
 			baseConfigurationReference = 38B003B0A19CAEED1864A6A8 /* Pods-GPVision.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 535JJCWT93;
+				DEVELOPMENT_TEAM = UR7DYAP8G6;
 				GCC_PREFIX_HEADER = GPVision/GPVision.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -603,6 +732,7 @@
 					"${SDKROOT}/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = GPVision/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.picture.GPVision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
